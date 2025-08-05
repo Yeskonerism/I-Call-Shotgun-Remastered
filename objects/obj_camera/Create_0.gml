@@ -1,0 +1,1 @@
+global.camera = camera_controller(obj_player, false);

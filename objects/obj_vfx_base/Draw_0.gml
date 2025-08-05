@@ -1,0 +1,1 @@
+draw_sprite_ext(vfx_sprite,0,x,y,image_xscale,image_yscale,image_angle,vfx_color,vfx_alpha);

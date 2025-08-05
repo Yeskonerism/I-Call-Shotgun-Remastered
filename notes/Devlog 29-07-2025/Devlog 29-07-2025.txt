@@ -1,0 +1,11 @@
+writing ts at 12:49 PM listening to DLZ by TV On The Radio
+
+Added a user interface, one style being the original ICS interface,
+and the other being representative of the ultrakill interface
+
+Can place tiles on the Walls tilemap layer and every square that isnt
+null creates an obj_solid at it, where the collision mask changes size
+depending on if theres more solids below it or not
+
+Full debug menu with different modes and a key reference list
+World values mode shows all hitboxes and collision references

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_camera_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_camera_functions",
+  "parent":{
+    "name":"TODO",
+    "path":"folders/TODO.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

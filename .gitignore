@@ -1,0 +1,6 @@
+.yyp.metadata/
+build/
+cache/
+*.yyz
+*.exe
+*.dll

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_create_vfx",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_create_vfx",
+  "parent":{
+    "name":"TODO",
+    "path":"folders/TODO.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

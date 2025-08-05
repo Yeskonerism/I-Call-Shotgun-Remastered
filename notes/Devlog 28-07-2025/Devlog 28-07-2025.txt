@@ -1,0 +1,12 @@
+writing ts at 4:11 AM listening to Becca by The Sukis
+
+Created simple yet flexible standard player movement
+
+Added collisions
+
+Created a script for player movement functions in which i wrote a player_dash function.
+This function does coooooool things like checking if theres a wall, reducing distance
+depending on how close player is to wall, leaves a player dash trail that disipates
+and also runs out of juice as you may say.
+
+Also a camera

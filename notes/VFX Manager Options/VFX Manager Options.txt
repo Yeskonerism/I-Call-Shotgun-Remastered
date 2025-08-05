@@ -1,0 +1,12 @@
+General
+
+sprite: ,
+color: ,
+alpha_start: ,
+alpha_end: ,
+scale_x: ,
+scale_y: ,
+angle:
+
+i have ideas about making a vfx controller and instead of setting a hard limit etc instead make an array with
+the limit size and use it as a vfx buffer
