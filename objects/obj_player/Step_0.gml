@@ -68,28 +68,13 @@ if(health_points > max_health_points) health_points = max_health_points;
 #endregion
 
 // debugging
-if(keyboard_check_pressed(ord("F"))) {
-	if(global.camera.follow == self) {
-		global.camera.switch_follow(obj_player_fake);
-		vfx_create_sparks(obj_player_fake.x, obj_player_fake.y, 50, true, {
-			sprite: spr_vfx_spark,
-			color: c_yellow,
-			alpha_start: 1,
-			alpha_end: 0,
-			scale_x: 0.5 + random(0.5),
-			scale_y: 0.5 + random(0.5),
-		});
-	} else {
-		global.camera.switch_follow(self);
-		vfx_create_sparks(self.x, self.y, 50, true, {
-			sprite: spr_vfx_spark,
-			color: c_yellow,
-			alpha_start: 1,
-			alpha_end: 0,
-			scale_x: 0.5 + random(0.5),
-			scale_y: 0.5 + random(0.5),
-		});
-	}
+// saving
+if(keyboard_check_pressed(vk_f9)) {
+	save_game_state();	
+}
+
+if(keyboard_check_pressed(vk_f10)) {
+	load_game_state();	
 }
 
 if(instance_exists(obj_debug_console)) can_move = false;
