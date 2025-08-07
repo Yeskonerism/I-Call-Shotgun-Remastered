@@ -16,7 +16,6 @@ if(vfx_sprite != noone) {
 }
 
 if(global.vfx_count < global.vfx_limit) {
-	global.vfx_active[global.vfx_count] = instance_id_get(self);
 	global.vfx_count++;
 }
 else {

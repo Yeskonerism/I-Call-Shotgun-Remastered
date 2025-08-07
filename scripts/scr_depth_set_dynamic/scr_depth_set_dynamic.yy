@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_depth_set_dynamic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_depth_set_dynamic",
+  "parent":{
+    "name":"Drawing",
+    "path":"folders/Scripts/Drawing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,21 @@
+---/===| Weapon Modification |===\---
+Max mods - 10
+
+The * I D E A *:
+Player can get mods through progression and stuff, as well as sometimes finding them off the beaten path if they search hard enough
+
+enemies will get harder and harder as the game progresses, making mods almost essential
+
+player is allowed:
+4 offensive mods
+2 utility mods
+2 tactical mods
+2 risk-reward mods
+
+Mods:
+explosive rounds - self explanatory
+sniper scope - allows player to move cursor to zoom in on a specific part of the map
+underbarrel grenade launcher - takes up 3 mod spaces
+broken magazine - 20 rounds large, allows for full on spray if the "glued trigger" mod is active, 1/20 chance to get a round to blow up in your face - does 20 damage
+glued trigger - once player starts firing, they cant stop until the magazine is fully dumped
+slugs - chance to stun enemies, can be melee'd to drop ammo/hp (glory kill essentially)

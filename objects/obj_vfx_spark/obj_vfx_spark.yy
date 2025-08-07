@@ -10,8 +10,8 @@
   "name":"obj_vfx_spark",
   "overriddenProperties":[],
   "parent":{
-    "name":"TODO",
-    "path":"folders/TODO.yy",
+    "name":"VFX",
+    "path":"folders/Objects/VFX.yy",
   },
   "parentObjectId":{
     "name":"obj_vfx_base",

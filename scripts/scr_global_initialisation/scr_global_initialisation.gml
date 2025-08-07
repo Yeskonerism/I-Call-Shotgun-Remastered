@@ -13,6 +13,7 @@ function global_initialise(_debug){
 	global.entity_count = 0;
 	global.vfx_count = 0;
 	
+	global.entity_limit = 150;
 	global.vfx_limit = 10000;
 	
 	global.paused = false;

@@ -1,0 +1,5 @@
+Map slowly gets revealed as the player moves around it
+
+allows for non-instant secret reveals and stuff
+
+less planning, more in the moment gameplay

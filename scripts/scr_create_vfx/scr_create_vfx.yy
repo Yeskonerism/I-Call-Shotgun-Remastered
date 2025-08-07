@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_create_vfx",
   "parent":{
-    "name":"TODO",
-    "path":"folders/TODO.yy",
+    "name":"VFX",
+    "path":"folders/Scripts/Drawing/VFX.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

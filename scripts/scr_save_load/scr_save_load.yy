@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_save_load",
   "parent":{
-    "name":"TODO",
-    "path":"folders/TODO.yy",
+    "name":"Game",
+    "path":"folders/Scripts/Game.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

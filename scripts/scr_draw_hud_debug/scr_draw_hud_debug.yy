@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_draw_hud_debug",
   "parent":{
-    "name":"HUD",
-    "path":"folders/Scripts/Drawing/HUD.yy",
+    "name":"Debug",
+    "path":"folders/Scripts/Debug.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

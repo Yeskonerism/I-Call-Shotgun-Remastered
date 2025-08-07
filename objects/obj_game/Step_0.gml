@@ -33,3 +33,12 @@ if(!map_generated) {
 	if(looper_x >= room_width-tile_width && looper_y >= room_height-tile_width)
 		map_generated = true;
 }
+
+mp_grid_clear_all(global.grid);
+
+mp_grid_add_instances(global.grid, obj_solid, false);
+
+//for(var i = 0; i < instance_number(objParentDoor); i++) {
+//	if(!instance_find(objParentDoor,i).isOpenable)
+//		mp_grid_add_instances(global.grid, instance_find(objParentDoor,i).id, false);
+//}

@@ -24,5 +24,11 @@ draw_alpha = 1;
 health_points = 100;
 max_health_points = 100;
 
+flash = 0;
+flash_active = false;
+flash_post_buffer = 15;
+
 // debugging
 global.entity_count++;
+
+//request_spawn(SpawnType.player,self.id);

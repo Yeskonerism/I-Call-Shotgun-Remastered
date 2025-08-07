@@ -8,7 +8,6 @@
 
 function vfx_create_trail(_x,_y,_sub_layer, _options = {}) {
 	var inst = instance_create_layer(_x, _y, "VFXSub", obj_vfx_trail);
-	
 	if (inst != noone) {
 		if (!is_undefined(_options.sprite)) inst.vfx_sprite = _options.sprite;
 		if (!is_undefined(_options.color)) inst.vfx_color  = _options.color;

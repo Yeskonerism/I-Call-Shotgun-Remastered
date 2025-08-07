@@ -11,8 +11,8 @@
   "name":"obj_vfx_base",
   "overriddenProperties":[],
   "parent":{
-    "name":"TODO",
-    "path":"folders/TODO.yy",
+    "name":"VFX",
+    "path":"folders/Objects/VFX.yy",
   },
   "parentObjectId":null,
   "persistent":false,

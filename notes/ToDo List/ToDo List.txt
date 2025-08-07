@@ -1,0 +1,11 @@
+obj_enemy_manager
+
+obj_vfx_manager
+
+obj_weapon_manager
+
+player death
+
+enemy pathfinding + state machine - done-ish
+
+procedural enemy spawns
