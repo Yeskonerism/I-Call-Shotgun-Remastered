@@ -79,4 +79,5 @@ function draw_debug_world_values(start_x, start_y, line_height) {
 	draw_text(start_x,start_y,"World object count: " + string(global.world_object_count));
 	draw_text(start_x,start_y + line_height,"Entity count: " + string(global.entity_count));
 	draw_text(start_x,start_y + line_height*2,"VFX count: " + string(global.vfx_count));	
+	draw_text(start_x,start_y + line_height*3,"Decal count: " + string(global.decal_count));	
 }

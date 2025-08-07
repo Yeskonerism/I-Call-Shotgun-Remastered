@@ -91,3 +91,5 @@ if(state == "going back" || state == "checking out") {
 	else if(target_pos[0] < x) draw_angle = lerp(draw_angle,5 * -draw_xscale,0.1);	
 	else draw_angle = lerp(draw_angle,0,0.1);
 } else draw_angle = lerp(draw_angle,0,0.1);
+
+if(health_points <= 0) instance_destroy(self);

@@ -1,0 +1,9 @@
+16 audio channels:
+1-4 - music
+1 - main music
+
+5-10 - player/weapon sfx
+5 - dashing
+6 - shooting
+
+11-16 - world sfx

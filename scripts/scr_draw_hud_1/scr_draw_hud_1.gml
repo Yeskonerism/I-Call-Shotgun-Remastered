@@ -71,4 +71,37 @@ function gui_draw_version_1(gui_w, gui_h, box_heights, box_widths, box_margin, u
 
 	// Top box (weapon/ammo)
 	draw_gui_box(box_margin, top_box_top, box_margin + box_widths, top_box_bottom, c_black, 0.5);
+	
+	var weapon_display_draw_color = c_white;
+	
+	if(instance_exists(obj_weapon_shotgun)) {
+		var text = ""
+		var wep_img = 0;
+		
+		if(!obj_weapon_shotgun.reloading)
+			if(obj_weapon_shotgun.magazine_size > 0) {
+				//text = "" + string(obj_weapon_shotgun.magazine_size) + " shells";
+				text = "Weapon"
+				wep_img = obj_weapon_shotgun.magazine_size;
+			} else {
+				text = "empty";
+				weapon_display_draw_color = c_red;
+			}
+		else {
+			weapon_display_draw_color = c_aqua;
+			
+			if(obj_weapon_shotgun.reload_timer > 40)
+				text = "Reloading.";
+			else if(obj_weapon_shotgun.reload_timer > 20 && obj_weapon_shotgun.reload_timer <= 40)
+				text = "Reloading..";
+			else
+				text = "Reloading...";
+				
+			var increment = obj_weapon_shotgun.reload_timer_max / obj_weapon_shotgun.magazine_size_reset;
+		}
+		
+		draw_gui_label_ext(bottom_box_middle_x,top_box_top + box_margin/2,text,weapon_display_draw_color,1,fnt_user_interface_sub,fa_center,fa_top);
+		draw_sprite_ext(spr_weapon_shotgun_hud,wep_img,bottom_box_middle_x,top_box_bottom - ((box_heights/2) - box_margin),1,1,0,weapon_display_draw_color,1);
+	} else {}
+		
 }

@@ -1,7 +1,6 @@
 if(instance_exists(target)) {
 	last_frame_pos = [x,y];
 	
-	//var sightLine = CollisionLineExt(x,y,objPlayer.x,objPlayer.y,spd,objDashCheckThingyMajig, objParentDoor);
 	var sight_line = collision_line(x,y,target.x,target.y,obj_solid, true, true);
 	
 	var distance = distance_to_object(target);

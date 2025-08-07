@@ -37,6 +37,8 @@ previous_state = "idle";
 // debugging
 detection_angle = 0;
 
+flash = 0;
+
 alarm[0] = ai_refresh;
 
 global.entity_count++;

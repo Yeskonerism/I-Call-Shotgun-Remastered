@@ -1,0 +1,1 @@
+global.entity_count--;

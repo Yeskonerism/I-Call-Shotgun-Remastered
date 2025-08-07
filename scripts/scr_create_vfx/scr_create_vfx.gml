@@ -33,3 +33,13 @@ function vfx_create_sparks(_x,_y, _spark_count, _sub_layer, _options = {}) {
 		}
 	}
 }
+
+
+// todo - fix it to be relative to other prefixes
+function vfx_create_blood_spray(_x, _y, _direction, _amount, _sub_layer) {
+    for (var i = 0; i < _amount; i++) {
+        var angle = _direction + random_range(-60, 60);
+        var inst = instance_create_layer(_x, _y, "VFXSub", obj_vfx_blood);
+        inst.dir = angle;
+    }
+}

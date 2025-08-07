@@ -1,0 +1,1 @@
+vfx_alpha = vfx_alpha_start;
