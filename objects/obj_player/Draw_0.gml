@@ -1,3 +1,6 @@
+if(iframes_active) draw_alpha = 0.75;
+else draw_alpha = 1;
+
 draw_sprite_ext(sprite_index,image_index,x,y,draw_xscale,image_yscale,draw_angle,draw_color,draw_alpha);
 
 if(flash > 0) {

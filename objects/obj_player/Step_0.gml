@@ -65,6 +65,11 @@ else draw_xscale = 1;
 
 if(health_points > max_health_points) health_points = max_health_points;
 
+if(iframes_active) {
+	if(iframes > 0) iframes--;
+	else {iframes = iframes_reset; iframes_active = false;}
+}
+
 #endregion
 
 // debugging
@@ -75,16 +80,4 @@ if(keyboard_check_pressed(vk_f9)) {
 
 if(keyboard_check_pressed(vk_f10)) {
 	load_game_state();	
-}
-
-if(keyboard_check_pressed(ord("F"))) {
-	vfx_create_sparks(x,y,50,true,{
-		sprite: spr_vfx_spark,
-		color: c_yellow,
-		alpha_start: 1,
-		alpha_end: 0,
-		scale_x: 0.5 + random_range(0,0.5),
-		scale_y: 0.5 + random_range(0,0.5),
-		angle: random(360)
-	});
 }

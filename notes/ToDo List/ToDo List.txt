@@ -1,13 +1,5 @@
-obj_enemy_manager
-
-obj_vfx_manager
-
-obj_weapon_manager
-
+obj_weapon_manager - done
 player death
-
-enemy pathfinding + state machine - done-ish
-
+enemy pathfinding + state machine - done
 procedural enemy spawns
-
-empty shells when shot
+empty shells when shot - done

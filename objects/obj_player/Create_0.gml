@@ -28,6 +28,11 @@ flash = 0;
 flash_active = false;
 flash_post_buffer = 15;
 
+// immunity frames
+iframes = 30;
+iframes_reset = 30;
+iframes_active = false;
+
 // debugging
 global.entity_count++;
 
