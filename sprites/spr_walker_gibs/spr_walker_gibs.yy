@@ -24,6 +24,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"1a79a15e-aa65-4d04-9cb9-7079e2b47c6a","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"1a79a15e-aa65-4d04-9cb9-7079e2b47c6a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"bf8da63b-8ee8-4259-8586-c18112b721c1","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"bf8da63b-8ee8-4259-8586-c18112b721c1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"spr_walker_gibs",
   "nineSlice":null,

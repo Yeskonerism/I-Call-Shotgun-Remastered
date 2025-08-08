@@ -63,6 +63,7 @@
     {"name":"obj_decal_shotgun_shell","order":1,"path":"objects/obj_decal_shotgun_shell/obj_decal_shotgun_shell.yy",},
     {"name":"obj_enemy_base","order":1,"path":"objects/obj_enemy_base/obj_enemy_base.yy",},
     {"name":"obj_fader","order":2,"path":"objects/obj_fader/obj_fader.yy",},
+    {"name":"obj_fog_controller","order":4,"path":"objects/obj_fog_controller/obj_fog_controller.yy",},
     {"name":"obj_shotgun_bullet","order":1,"path":"objects/obj_shotgun_bullet/obj_shotgun_bullet.yy",},
     {"name":"obj_user_interface","order":1,"path":"objects/obj_user_interface/obj_user_interface.yy",},
     {"name":"obj_vfx_blood","order":3,"path":"objects/obj_vfx_blood/obj_vfx_blood.yy",},
@@ -87,7 +88,7 @@
     {"name":"snd_shotgun_shoot","order":2,"path":"sounds/snd_shotgun_shoot/snd_shotgun_shoot.yy",},
     {"name":"spr_decal_shotgun_shell","order":1,"path":"sprites/spr_decal_shotgun_shell/spr_decal_shotgun_shell.yy",},
     {"name":"spr_enemy_walker_run","order":1,"path":"sprites/spr_enemy_walker_run/spr_enemy_walker_run.yy",},
-    {"name":"spr_placeholder_background","order":5,"path":"sprites/spr_placeholder_background/spr_placeholder_background.yy",},
+    {"name":"spr_floor_tiles","order":2,"path":"sprites/spr_floor_tiles/spr_floor_tiles.yy",},
     {"name":"spr_player_run","order":1,"path":"sprites/spr_player_run/spr_player_run.yy",},
     {"name":"spr_shotgun_bullet","order":4,"path":"sprites/spr_shotgun_bullet/spr_shotgun_bullet.yy",},
     {"name":"spr_solid_full_hitbox","order":2,"path":"sprites/spr_solid_full_hitbox/spr_solid_full_hitbox.yy",},
@@ -97,5 +98,6 @@
     {"name":"spr_weapon_shotgun_hud","order":5,"path":"sprites/spr_weapon_shotgun_hud/spr_weapon_shotgun_hud.yy",},
     {"name":"spr_weapon_shotgun_rack","order":2,"path":"sprites/spr_weapon_shotgun_rack/spr_weapon_shotgun_rack.yy",},
     {"name":"spr_weapon_shotgun","order":1,"path":"sprites/spr_weapon_shotgun/spr_weapon_shotgun.yy",},
+    {"name":"ts_floor_tiles","order":1,"path":"tilesets/ts_floor_tiles/ts_floor_tiles.yy",},
   ],
 }

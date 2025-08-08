@@ -1,6 +1,12 @@
-if(image_alpha > 0) {
-	image_alpha-=0.005;	
+if(downscale_time > 0) {
+	downscale_time--;
+} else {
+	if(scale > 0) scale -= downscale_speed;
+	else instance_destroy(self);
 }
+
+image_xscale = scale;
+image_yscale = scale;
 
 if(spd > 0) spd -= 0.25;
 else spd = 0;

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_lerp_angle",
+  "%Name":"scr_functions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_lerp_angle",
+  "name":"scr_functions",
   "parent":{
     "name":"Other",
     "path":"folders/Scripts/Other.yy",

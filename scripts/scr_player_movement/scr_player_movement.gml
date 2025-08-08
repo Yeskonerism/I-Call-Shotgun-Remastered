@@ -39,31 +39,36 @@ function player_dash(hsp,vsp){
 			
 			dash_value -= 100;
 			
-			var max_hits = 3;
-			var list = ds_list_create();
-			var hit_count = collision_line_list(
-				x - lengthdir_x(sprite_get_width(sprite_index)/2,snapped_angle), 
-				y - lengthdir_y(sprite_get_height(sprite_index)/2,snapped_angle), 
-				x + dx + lengthdir_x(sprite_get_width(sprite_index)/2,snapped_angle), 
-				y + dy + lengthdir_y(sprite_get_height(sprite_index)/2, snapped_angle), 
-				obj_enemy_base, 
-				true, 
-				true, 
-				list, 
-				true
-			);
+			//var max_hits = 3;
+			//var list = ds_list_create();
+			//var hit_count = collision_line_width_list(
+			//	x - lengthdir_x(sprite_get_width(sprite_index)/2,snapped_angle), 
+			//	y - lengthdir_y(sprite_get_height(sprite_index)/2,snapped_angle), 
+			//	x + dx + lengthdir_x(sprite_get_width(sprite_index)/2,snapped_angle), 
+			//	y + dy + lengthdir_y(sprite_get_height(sprite_index)/2, snapped_angle), 
+			//	8,
+			//	obj_enemy_base, 
+			//	true, 
+			//	true, 
+			//	list, 
+			//	true
+			//);
 			
-			for (var i = 0; i < min(hit_count, max_hits); i++) {
-			    var enemy = list[| i];
-			    if (instance_exists(enemy)) {
-			        with (enemy) {
-						event_user(2)
-			            apply_damage(self,50);
-			        }
-			    }
+			var enemies_hit = collision_line_width_list(x, y, x+dx, y+dy, 16, obj_enemy_base, true, true);
+			
+			if(enemies_hit) {
+				for (var i = 0; i < ds_list_size(enemies_hit); i++) {
+					var enemy = enemies_hit[| i];
+				    if (instance_exists(enemy)) {
+				        with (enemy) {
+							event_user(2)
+				            apply_damage(self,50);
+				        }
+				    }
+				}
 			}
 			
-			ds_list_destroy(list);
+			//ds_list_destroy(list);
 			
 			iframes_active = true;
 			

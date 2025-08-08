@@ -6,6 +6,8 @@ function global_initialise(_debug){
 	#macro CAMERA_X		camera_get_view_x(CAMERA)
 	#macro CAMERA_Y		camera_get_view_y(CAMERA)
 	
+	#macro TILE_SIZE	16
+	
 	// debug
 	global.debug = _debug;
 	
