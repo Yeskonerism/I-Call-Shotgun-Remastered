@@ -23,6 +23,10 @@ primary_fire = function() {
 		
 		draw_fire_sprite = true;
 		
+		var shell_angle = point_direction(x, y, mouse_x, mouse_y) + random_range(60, 100); // tweak this
+		var shell = instance_create_layer(x, y, "VFXMid", obj_decal_shotgun_shell);
+		shell.dir = shell_angle;
+		
 		// shoot bullets
 		for(var i = 0; i < 5; i++) {
 			var random_offset = random_range(-5,5);
@@ -30,6 +34,9 @@ primary_fire = function() {
 			var inst = instance_create_layer(x,y,layer,obj_shotgun_bullet);
 			inst.dir = dir + random_offset;
 		}
+	} else if(magazine_size == 0) {
+		reload_timer = reload_timer_max;
+		reloading = true;	
 	}
 }
 

@@ -76,3 +76,14 @@ function audio_find_sound_in_channel(_sound) {
 	debug_stream_add("Could not find sound: " + audio_get_name(_sound));
 	return -1;
 }
+
+function audio_set_channel_tag(_channel_id, _tag) {
+	if (_channel_id < 0 || _channel_id >= array_length(global.audio_channels)) return;
+	var chan = global.audio_channels[_channel_id];
+	
+	chan.tag = _tag;
+}
+
+// todo:
+// - find free channel of tag function
+// - channel tag verification system (?)

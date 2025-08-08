@@ -9,3 +9,5 @@ player death
 enemy pathfinding + state machine - done-ish
 
 procedural enemy spawns
+
+empty shells when shot

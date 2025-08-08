@@ -48,3 +48,19 @@ if(global.debug) {
 }
 
 #endregion
+
+#region user feedback
+
+if(got_hit_flash > 0) {
+	got_hit_flash_alpha-=0.05;
+	got_hit_flash--;
+	
+	draw_set_color(c_red);
+	draw_set_alpha(got_hit_flash_alpha);
+		draw_rectangle(0,0,gui_w,gui_h,false);	
+	reset_all_draw_values();
+} else {
+	got_hit_flash_alpha = 0.5;	
+}
+
+#endregion

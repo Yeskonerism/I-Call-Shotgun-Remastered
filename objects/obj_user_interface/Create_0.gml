@@ -14,3 +14,6 @@ enum DebugView {
 }
 
 show_debug_mode = DebugView.None;
+
+got_hit_flash = 0;
+got_hit_flash_alpha = 0.5;

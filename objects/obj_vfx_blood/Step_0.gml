@@ -22,6 +22,6 @@ if (!landed) {
 		vfx_lifetime = 10;
 
         //// Optionally: create a decal here
-        instance_create_layer(x, y, "Decals", obj_blood_decal);
+        instance_create_layer(x, y, "Decals", obj_decal_blood);
     }
 }

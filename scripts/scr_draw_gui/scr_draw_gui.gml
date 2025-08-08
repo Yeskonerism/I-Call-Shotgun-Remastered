@@ -3,7 +3,7 @@
 function draw_gui_box(_x, _y, _xx, _yy, color, alpha){
 	draw_set_colour(color);
 	draw_set_alpha(alpha);
-		draw_rectangle(_x,_y,_xx,_yy,false);
+		draw_roundrect(_x,_y,_xx,_yy,false);
 	
 	reset_all_draw_values();
 }
@@ -12,6 +12,14 @@ function draw_gui_box_midpoint(_x, _y, width, height, color, alpha){
 	draw_set_colour(color);
 	draw_set_alpha(alpha);
 		draw_rectangle(_x - (width/2), _y - (height/2), _x + (width/2), _y + (height/2),false);
+	
+	reset_all_draw_values();
+}
+
+function draw_gui_box_midpoint_round(_x, _y, width, height, color, alpha){
+	draw_set_colour(color);
+	draw_set_alpha(alpha);
+		draw_roundrect(_x - (width/2), _y - (height/2), _x + (width/2), _y + (height/2),false);
 	
 	reset_all_draw_values();
 }

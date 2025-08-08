@@ -1,12 +1,12 @@
 function gui_draw_version_1(gui_w, gui_h, box_heights, box_widths, box_margin, ui_health_display) {
-	var bottom_box_top = gui_h - (box_heights + box_margin);
+	var bottom_box_top = gui_h - (box_heights);
 	var bottom_box_bottom = gui_h - box_margin;
 
 	var bottom_box_middle_x = (box_margin * 2 + box_widths) / 2;
 	var bottom_box_middle_y = (bottom_box_top + bottom_box_bottom) / 2;
 
-	var top_box_top = gui_h - (box_heights * 2 + box_margin * 2);
-	var top_box_bottom = gui_h - (box_heights + box_margin + box_margin / 2);
+	var top_box_top = gui_h - (box_heights * 2 + box_margin);
+	var top_box_bottom = gui_h - (box_heights + box_margin / 2);
 
 	var healthbar_margin = 8;
 	var healthbar_top = bottom_box_top + healthbar_margin;

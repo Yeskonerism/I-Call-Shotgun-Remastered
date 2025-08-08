@@ -1,1 +1,0 @@
-if(place_meeting(x,y-6,obj_solid)) instance_destroy(self);
