@@ -10,9 +10,9 @@ if(!instance_exists(obj_user_interface)) {
 	instance_create_layer(0,0,"UserInterface",obj_user_interface);	
 }
 
-if(!instance_exists(obj_fog_controller)) {
-	instance_create_layer(0,0,"UserInterface",obj_fog_controller);	
-}
+//if(!instance_exists(obj_fog_controller)) {
+//	instance_create_layer(0,0,"UserInterface",obj_fog_controller);	
+//}
 
 // automatic tilemap based solid generation
 if(!map_generated) {

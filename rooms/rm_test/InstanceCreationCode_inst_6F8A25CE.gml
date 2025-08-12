@@ -1,0 +1,1 @@
+console_obj = inst_471DE4D8;

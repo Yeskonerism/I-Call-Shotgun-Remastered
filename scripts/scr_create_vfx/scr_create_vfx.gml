@@ -41,3 +41,7 @@ function vfx_create_blood_spray(_x, _y, _direction, _amount, _sub_layer) {
         inst.dir = angle;
     }
 }
+
+function vfx_create_explosion_small(_x,_y,_sub_layer) {
+	instance_create_layer(_x,_y,"VFXSub",obj_vfx_explosion);
+}

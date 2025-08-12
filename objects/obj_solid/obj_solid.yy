@@ -9,8 +9,8 @@
   "name":"obj_solid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level",
-    "path":"folders/Objects/Level.yy",
+    "name":"Solids",
+    "path":"folders/Objects/Level/Solids.yy",
   },
   "parentObjectId":null,
   "persistent":false,

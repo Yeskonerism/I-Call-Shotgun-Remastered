@@ -10,6 +10,8 @@ vfx_color = c_white;
 
 vfx_sprite = noone;
 
+vfx_scale = 1;
+
 if(vfx_sprite != noone) {
 	sprite_index = vfx_sprite;
 	image_index = 0;

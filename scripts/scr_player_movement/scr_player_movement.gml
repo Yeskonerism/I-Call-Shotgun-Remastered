@@ -12,7 +12,7 @@ function player_dash(hsp,vsp){
         var attempt = 0;
 
         // Obstacle check — reduce dash distance if needed
-        while (!place_free(x + dx, y + dy) && attempt < max_attempts) {
+        while (!place_free(x + dx, y + dy) && attempt < max_attempts && !place_meeting(x+dx,y+dy,obj_destructable)) {
             var reduced_speed = dash_speed - attempt;
             dx = lengthdir_x(reduced_speed, snapped_angle);
             dy = lengthdir_y(reduced_speed, snapped_angle);
@@ -20,8 +20,9 @@ function player_dash(hsp,vsp){
         }
 
         // Only move if a valid dash space was found
-        if (place_free(x + dx, y + dy) && !collision_line(x,y,x+lengthdir_x(max_attempts-attempt,snapped_angle),y+lengthdir_y(max_attempts-attempt,snapped_angle),obj_solid,true,true) && dash_value > 100) {
-            for(var i = 0; i < 4; i++) {
+        if (!place_meeting(x + dx, y + dy,obj_solid) && !collision_line(x,y,x+lengthdir_x(max_attempts-attempt,snapped_angle),y+lengthdir_y(max_attempts-attempt,snapped_angle),obj_solid,true,true) && dash_value > 100) {
+            // create dash trail
+			for(var i = 0; i < 4; i++) {
 				vfx_create_trail(x + (dx/4 * i), y + (dy/4 * i), true, {
 					sprite: spr_player,
 					color: c_red,
@@ -35,25 +36,13 @@ function player_dash(hsp,vsp){
 				)
 			}
 			
+			// play dash sfx
 			audio_play_on_channel( 1, snd_dash, false, "sfx" );
 			
+			// reduce player dash value
 			dash_value -= 100;
 			
-			//var max_hits = 3;
-			//var list = ds_list_create();
-			//var hit_count = collision_line_width_list(
-			//	x - lengthdir_x(sprite_get_width(sprite_index)/2,snapped_angle), 
-			//	y - lengthdir_y(sprite_get_height(sprite_index)/2,snapped_angle), 
-			//	x + dx + lengthdir_x(sprite_get_width(sprite_index)/2,snapped_angle), 
-			//	y + dy + lengthdir_y(sprite_get_height(sprite_index)/2, snapped_angle), 
-			//	8,
-			//	obj_enemy_base, 
-			//	true, 
-			//	true, 
-			//	list, 
-			//	true
-			//);
-			
+			// calculate enemies to damage if enemies are inline
 			var enemies_hit = collision_line_width_list(x, y, x+dx, y+dy, 16, obj_enemy_base, true, true);
 			
 			if(enemies_hit) {
@@ -68,13 +57,25 @@ function player_dash(hsp,vsp){
 				}
 			}
 			
-			//ds_list_destroy(list);
+			// calculate destructable objects to damage if enemies are inline
+			var destructibles_hit = collision_line_width_list(x, y, x+dx, y+dy, 16, obj_destructable, true, true);
+
+			if (destructibles_hit) {
+			    for (var i = 0; i < ds_list_size(destructibles_hit); i++) {
+			        var dest = destructibles_hit[| i];
+			        if (instance_exists(dest)) {
+			            with (dest) {
+			                apply_damage(self,9999);
+			            }
+			        }
+			    }
+			}
 			
 			iframes_active = true;
 			
 			x += dx;
             y += dy;
-        } else {
+		} else {
             // Optional: play a failed dash sound or effect
 			debug_stream_add("Player dash failed");
         }

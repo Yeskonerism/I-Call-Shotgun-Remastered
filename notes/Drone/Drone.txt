@@ -1,0 +1,7 @@
+room render drone
+
+checks walls up down left right
+
+if all, creates room reveal object then moves to where wall right is + 1 and executes the same command
+
+does this till all rooms are accounted for

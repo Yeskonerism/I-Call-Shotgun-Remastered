@@ -43,3 +43,20 @@ function point_distance_to_line(px, py, x1, y1, x2, y2) {
     return point_distance(px, py, closest_x, closest_y);
 }
 
+function string_wrap(_str, _width) {
+    var output = "";
+    var line = "";
+    var words = string_split(_str, " ");
+    
+    for (var i = 0; i < array_length(words); i++) {
+        var test_line = line == "" ? words[i] : line + " " + words[i];
+        if (string_width(test_line) > _width) {
+            output += line + "\n";
+            line = words[i];
+        } else {
+            line = test_line;
+        }
+    }
+    output += line;
+    return output;
+}

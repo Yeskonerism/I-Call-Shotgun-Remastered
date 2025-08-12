@@ -102,6 +102,9 @@ function gui_draw_version_1(gui_w, gui_h, box_heights, box_widths, box_margin, u
 		
 		draw_gui_label_ext(bottom_box_middle_x,top_box_top + box_margin/2,text,weapon_display_draw_color,1,fnt_user_interface_sub,fa_center,fa_top);
 		draw_sprite_ext(spr_weapon_shotgun_hud,wep_img,bottom_box_middle_x,top_box_bottom - ((box_heights/2) - box_margin),1,1,0,weapon_display_draw_color,1);
-	} else {}
+	} else {
+		draw_gui_label_ext(bottom_box_middle_x,top_box_top + box_margin/2,"WEAPON",c_red,1,fnt_user_interface_sub,fa_center,fa_top);
+		draw_gui_label_ext(bottom_box_middle_x,top_box_bottom - ((box_heights/1.75) - box_margin),"NONE",c_red,1,fnt_user_interface,fa_center,fa_middle);
+	}
 		
 }

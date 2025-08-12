@@ -1,4 +1,4 @@
-tile_sz = 4;
+tile_sz = 8;
 
 fog_width  = room_width div tile_sz // TILE_SIZE;
 fog_height = room_height div tile_sz //TILE_SIZE;
@@ -16,6 +16,6 @@ for (var i = 0; i < fog_width; i++) {
     }
 }
 
-reveal_radius = 20;
+reveal_radius = 15;
 
 fog_surface = -1;
