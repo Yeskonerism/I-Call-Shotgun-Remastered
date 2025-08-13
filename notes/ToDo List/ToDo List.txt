@@ -3,3 +3,5 @@ player death
 enemy pathfinding + state machine - done
 procedural enemy spawns
 empty shells when shot - done
+
+console distance based activation (collision lines + dist check)

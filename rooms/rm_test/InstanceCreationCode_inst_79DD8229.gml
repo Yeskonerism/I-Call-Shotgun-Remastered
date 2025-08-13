@@ -1,14 +1,19 @@
-trigger_function = function () {
-	var d_box = instance_create_layer(0,0,"UserInterface",obj_dialouge_box);
-		d_box.font = fnt_user_interface;
-		
-		d_box.text = "You can use SPACE to destroy some objects";
-		
-		d_box.auto_close = false;
-		d_box.close_on_key = true;
-		d_box.close_key = vk_space;
-};
+dialouge_trigger = true;
 
-end_function = function() {
-	instance_destroy(inst_79DD8229);
-}
+trigger_function = function () {
+	with(instance_create_layer(0,0,"UserInterface",obj_dialouge_box)) {
+		font = fnt_user_interface;
+		
+		text = "You can use SPACE to destroy some objects";
+		
+		auto_close = false;
+		
+		close_on_key = true;
+		close_key = vk_space;
+		
+		close_on_mouse = true;
+		close_mouse = mb_side1;
+	}
+		
+	instance_destroy(inst_6AA96053);
+};

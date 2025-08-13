@@ -1,3 +1,5 @@
+dialouge_trigger = true;
+
 trigger_function = function () {
     instance_create_layer(x,y,layer,obj_laser); 
 

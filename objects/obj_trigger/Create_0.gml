@@ -11,4 +11,4 @@ trigger_timer   = 60;         // delay in steps
 end_on_key      = false;      // require a key press to trigger?
 end_on_pressed  = vk_space;   // which key?
 
-end_function = function () { };
+dialouge_trigger = false;

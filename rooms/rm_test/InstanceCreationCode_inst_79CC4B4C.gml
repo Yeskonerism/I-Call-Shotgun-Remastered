@@ -1,3 +1,5 @@
+dialouge_trigger = true;
+
 trigger_function = function () {
 	var d_box = instance_create_layer(0,0,"UserInterface",obj_dialouge_box);
 		d_box.font = fnt_user_interface;

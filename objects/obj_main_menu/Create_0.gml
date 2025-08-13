@@ -13,3 +13,5 @@ title_angle_rotate_direction = -1;
 title_angle_time = 0;                // internal timer
 title_angle_speed = 0.05;            // speed of oscillation
 title_angle_max = 5;                // maximum angle
+
+exit_tick = 0;

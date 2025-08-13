@@ -8,5 +8,9 @@ reset_all_draw_values();
 
 draw_gui_box_midpoint_round(room_width/2,room_height/2,192,92,c_black,0.5);
 
+if(exit_tick > 0) {
+	draw_gui_label(16,16,"hold ESC to exit...",c_white,(exit_tick/60) + 0.3,fnt_game);
+}
+
 // draw menu elements
 menu.draw(room_width/2, room_height/2, 8, fnt_menu_interface, fa_center, fa_middle, c_red, c_yellow);

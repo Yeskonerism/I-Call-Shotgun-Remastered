@@ -1,8 +1,12 @@
 text = "Default dialogue text here."; // Set this in trigger
 display_time = 120; // frames
 auto_close = true;
+
 close_on_key = true;
 close_key = vk_space;
+
+close_on_mouse = false;
+close_mouse = mb_right;
 
 timer = display_time;
 
@@ -14,3 +18,6 @@ padding_y = 16;
 wrap_width = 480;
 
 font = undefined;
+
+end_on_event	= false;
+end_event = function() {}; // must return true or false
