@@ -1,0 +1,1 @@
+debris_object = obj_debris_glass_door;

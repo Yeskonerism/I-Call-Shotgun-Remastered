@@ -1,7 +1,9 @@
 dialouge_trigger = true;
 
 trigger_function = function () {
-    instance_create_layer(x,y,layer,obj_laser); 
+	obj_laser_pointer.image_index = 1;
+	
+    instance_create_layer(obj_laser_pointer.x,obj_laser_pointer.y,layer,obj_laser); 
 
 	var d_box = instance_create_layer(0,0,"UserInterface",obj_dialouge_box);
 		d_box.font = fnt_user_interface;

@@ -37,3 +37,4 @@ iframes_active = false;
 global.entity_count++;
 
 //request_spawn(SpawnType.player,self.id);
+keycards = ds_map_create();
