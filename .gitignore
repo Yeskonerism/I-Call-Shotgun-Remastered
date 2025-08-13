@@ -1,0 +1,6 @@
+*.ypp
+*.resource_order
+plans and ideas/
+builds/
+datafiles/
+.git/
