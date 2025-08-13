@@ -1,5 +1,12 @@
+# Ignore GameMaker project artifacts
 *.ypp
 *.resource_order
+
+# Ignore specific folders from repo root
 /plans and ideas/
 /builds/
 /datafiles/
+
+# Ignore any builds or datafiles anywhere in repo
+**/builds/
+/**/datafiles/
